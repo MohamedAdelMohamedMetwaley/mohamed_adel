@@ -1,0 +1,128 @@
+body {
+  overflow: hidden;
+  animation: allowScroll 0s 6s forwards;
+}
+
+@keyframes allowScroll {
+  to {
+    overflow: unset;
+  }
+}
+
+.pageload {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  animation: endLoad 2s 5s forwards;
+}
+
+@keyframes endLoad {
+  0% {
+    right: 0;
+    /* left: 0; */
+  }
+  100% {
+    right: 100%;
+    /* left: 100%; */
+    display: none;
+  }
+}
+
+.cursor-container {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  height: 30px;
+  width: 30px;
+  animation: openLink 1.5s 3.5s forwards;
+}
+
+.cursor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 15px;
+  width: 15px;
+  clip-path: polygon(0% 0%, 65% 30%, 40% 40%, 30% 65%);
+  background-color: white;
+  scale: 1.5;
+}
+
+.cursor-click {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  visibility: hidden;
+  animation: click 300ms 5s;
+}
+
+@keyframes openLink {
+  to {
+    top: calc(50% + 1px);
+    left: 50%;
+  }
+}
+@keyframes click {
+  50% {
+    visibility: visible;
+  }
+}
+
+.npm {
+  display: inline-block;
+  width: 24ch;
+}
+
+.pageload h1 {
+  font-size: 18px;
+  white-space: nowrap;
+  width: 7%;
+  overflow: clip;
+  animation: showText 0.5s 1s linear forwards,
+    cursor 500ms step-end 11 alternate;
+}
+
+.pageload p {
+  font-size: 13px;
+  white-space: nowrap;
+
+  visibility: hidden;
+  animation: showLink 1s 3s forwards, hoverLink 0s 4.6s forwards;
+}
+
+@keyframes hoverLink {
+  to {
+    color: cyan;
+    text-decoration: underline;
+  }
+}
+
+@keyframes showText {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 5px solid white;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes showLink {
+  to {
+    visibility: visible;
+  }
+}

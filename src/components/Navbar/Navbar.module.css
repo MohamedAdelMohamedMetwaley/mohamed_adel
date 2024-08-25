@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 120px;
+  padding-block: 5px;
+  position: sticky;
+  top: 0;
+  margin-top: 30px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navBtn {
+  background-color: transparent;
+  font-size: var(--font-m);
+  border: none;
+  cursor: pointer;
+  padding-inline: 24px;
+  padding-block: 10px;
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+
+.navBtn.active,
+.navBtn:hover {
+  color: var(--green-300);
+}
