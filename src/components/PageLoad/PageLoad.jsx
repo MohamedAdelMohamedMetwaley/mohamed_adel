@@ -49,7 +49,7 @@ function PageLoad() {
         <h1>
           <span>{">"}</span> npm run awesomeness
         </h1>
-        <p>http://localhost:awesome-portfolio</p>
+        <p>http://localhost:awesome-portfolio/</p>
       </div>
     </div>
   );

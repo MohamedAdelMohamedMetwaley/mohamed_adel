@@ -1,12 +1,8 @@
 import styles from "./Navbar.module.css";
 import Logo from "../Logo";
 
-function Navbar({ refs }) {
+function Navbar({ refs, handleNavigate }) {
   const [homeRef, projectsRef, aboutRef, contactRef] = refs;
-
-  function handleClickLink(ref) {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  }
   return (
     <nav className={`${styles.nav} breakout`}>
       <Logo />
@@ -14,7 +10,7 @@ function Navbar({ refs }) {
         <li>
           <button
             className={`${styles.navBtn} ${styles.active}`}
-            onClick={() => handleClickLink(homeRef)}
+            onClick={() => handleNavigate(homeRef)}
           >
             Home
           </button>
@@ -22,7 +18,7 @@ function Navbar({ refs }) {
         <li>
           <button
             className={styles.navBtn}
-            onClick={() => handleClickLink(projectsRef)}
+            onClick={() => handleNavigate(projectsRef)}
           >
             Projects
           </button>
@@ -30,7 +26,7 @@ function Navbar({ refs }) {
         <li>
           <button
             className={styles.navBtn}
-            onClick={() => handleClickLink(aboutRef)}
+            onClick={() => handleNavigate(aboutRef)}
           >
             About me
           </button>
@@ -38,7 +34,7 @@ function Navbar({ refs }) {
         <li>
           <button
             className={styles.navBtn}
-            onClick={() => handleClickLink(contactRef)}
+            onClick={() => handleNavigate(contactRef)}
           >
             Contact
           </button>

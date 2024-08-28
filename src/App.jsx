@@ -13,12 +13,23 @@ function App() {
   const aboutRef = useRef();
   const contactRef = useRef();
 
+  function handleNavigate(ref) {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
       <PageLoad />
       <FloatingSVGS />
-      <Navbar refs={[homeRef, projectsRef, aboutRef, contactRef]} />
-      <Header refProps={homeRef} />
+      <Navbar
+        refs={[homeRef, projectsRef, aboutRef, contactRef]}
+        handleNavigate={handleNavigate}
+      />
+      <Header
+        refProps={homeRef}
+        projectsRef={projectsRef}
+        handleNavigate={handleNavigate}
+      />
       <Projects refProps={projectsRef} />
       <About refProps={aboutRef} />
       <Contact refProps={contactRef} />

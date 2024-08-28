@@ -10,12 +10,11 @@ body {
 }
 
 .pageload {
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   min-height: 100vh;
   min-height: 100svh;
   top: 0;
-  overflow: hidden;
   background: black;
   color: white;
   display: flex;

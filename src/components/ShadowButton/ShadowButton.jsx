@@ -1,7 +1,11 @@
 import styles from "./ShadowButton.module.css";
 
-function ShadowButton() {
-  return <button className={styles.button}>See My Work</button>;
+function ShadowButton({ handleClick }) {
+  return (
+    <button onClick={handleClick} className={styles.button}>
+      See My Work
+    </button>
+  );
 }
 
 export default ShadowButton;
