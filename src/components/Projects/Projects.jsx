@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css";
 
-function Projects() {
-  return <div></div>;
+function Projects({ refProps }) {
+  return <section ref={refProps} className={styles.projects}></section>;
 }
 
 export default Projects;

@@ -14,6 +14,7 @@ body {
   min-width: 100%;
   min-height: 100vh;
   min-height: 100svh;
+  top: 0;
   overflow: hidden;
   background: black;
   color: white;
@@ -23,6 +24,7 @@ body {
   align-items: center;
   font-family: "Courier New", Courier, monospace;
   animation: endLoad 2s 5s forwards;
+  z-index: 5;
 }
 
 @keyframes endLoad {
@@ -55,6 +57,7 @@ body {
   clip-path: polygon(0% 0%, 65% 30%, 40% 40%, 30% 65%);
   background-color: white;
   scale: 1.5;
+  animation: cursorPointer 0s 5s forwards;
 }
 
 .cursor-click {

@@ -1,0 +1,40 @@
+.floatingSVG__container {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.floatingSVG {
+  position: absolute;
+  animation: float 5s 0s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(2px, -4px);
+  }
+  50% {
+    transform: translate(-8px, 6px);
+  }
+}
+
+.svg1 {
+  top: 20%;
+  left: 5%;
+}
+
+.svg2 {
+  top: 75%;
+  left: 3%;
+}
+
+.svg3 {
+  top: 25%;
+  left: 50%;
+}
+
+.svg4 {
+  top: 70%;
+  left: 52%;
+}

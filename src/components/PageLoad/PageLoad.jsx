@@ -43,7 +43,7 @@ function PageLoad() {
             strokeLinecap="round"
           />
         </svg>
-        <span className="cursor"></span>
+        <span className="cursor">{/* <HandPointer /> */}</span>
       </div>
       <div className="npm">
         <h1>
