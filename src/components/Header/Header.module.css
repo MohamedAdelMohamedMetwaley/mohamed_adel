@@ -22,22 +22,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.button {
-  background-color: var(--btn-color);
-  border: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
-
-.button:hover {
-  transform: translate(3px, 3px);
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
-}
-
 .imageContainer {
   width: 30%;
 }

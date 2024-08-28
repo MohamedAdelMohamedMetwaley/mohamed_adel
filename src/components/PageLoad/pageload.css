@@ -1,9 +1,9 @@
 body {
   overflow: hidden;
-  animation: allowScroll 0s 6s forwards;
+  animation: finishPageLoad 0s 6s forwards;
 }
 
-@keyframes allowScroll {
+@keyframes finishPageLoad {
   to {
     overflow: unset;
   }

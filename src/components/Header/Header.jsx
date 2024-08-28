@@ -1,3 +1,4 @@
+import ShadowButton from "../ShadowButton/ShadowButton";
 import styles from "./Header.module.css";
 
 // const svgs = document.querySelector(".floatingSVG__container");
@@ -11,7 +12,7 @@ function Header({ refProps }) {
           a frontend web developer & designer, specializing in turning ideas
           into responsive, functional, and engaging websites.
         </p>
-        <button className={styles.button}>See My Work</button>
+        <ShadowButton />
       </article>
       <picture className={styles.imageContainer}>
         <img src="./images/MePhoto.jpg" alt="my-photo" />
