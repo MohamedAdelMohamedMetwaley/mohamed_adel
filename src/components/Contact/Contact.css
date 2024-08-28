@@ -39,6 +39,7 @@ form label {
 .input-box .field.mess {
   height: 100px;
   resize: vertical;
+  margin-bottom: 1.5rem;
 }
 
 .input-box .field:focus {
@@ -46,7 +47,7 @@ form label {
   border-color: var(--yellow);
 }
 
-form button {
+/* form button {
   height: 55px;
   padding: 12px 24px 12px 24px;
   background: var(--btn-color);
@@ -61,8 +62,8 @@ form button {
   transition: 0.3s;
   letter-spacing: 1px;
   background-color: var(--green-300);
-}
+} */
 
-form button:hover {
+/* form button:hover {
   transform: translateY(-3px);
-}
+} */

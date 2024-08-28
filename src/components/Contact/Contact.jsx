@@ -1,4 +1,5 @@
 import "./Contact.css";
+import styles from "../ShadowButton/ShadowButton.module.css";
 import Swal from "sweetalert2";
 
 const access_key = "";
@@ -76,7 +77,9 @@ function Contact({ refProps }) {
             name="subject"
             value="New message from your website's contact form."
           />
-          <button type="submit">Send Message</button>
+          <button className={styles.button} type="submit">
+            Send Message
+          </button>
         </div>
       </form>
     </section>
