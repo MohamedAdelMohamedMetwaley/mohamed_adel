@@ -1,6 +1,7 @@
 body {
-  overflow: hidden;
-  animation: finishPageLoad 0s 6s forwards;
+  /* this with position:absolute to make the animation happen only at the top of the page */
+  /* overflow-x: hidden; */
+  /* animation: finishPageLoad 0s 6s forwards; */
 }
 
 @keyframes finishPageLoad {
@@ -10,6 +11,7 @@ body {
 }
 
 .pageload {
+  /* position: absolute; */
   position: fixed;
   min-width: 100%;
   min-height: 100vh;
